@@ -13,7 +13,7 @@ public class Task extends Lesson{
 	private static final long serialVersionUID = 1L;
 	
 	private String description;
-	private Integer questCount;
+	private Integer questionCount;
 	private Integer approvalCount;
 	private Double weight;
 	
@@ -23,11 +23,11 @@ public class Task extends Lesson{
 	public Task() {
 	}
 
-	public Task(Long id, String title, Integer position, Section section, String description, Integer questCount,
+	public Task(Long id, String title, Integer position, Section section, String description, Integer questionCount,
 			Integer approvalCount, Double wight, Instant duoDate) {
 		super(id, title, position, section);
 		this.description = description;
-		this.questCount = questCount;
+		this.questionCount = questionCount;
 		this.approvalCount = approvalCount;
 		this.weight = wight;
 		this.duoDate = duoDate;
@@ -41,12 +41,12 @@ public class Task extends Lesson{
 		this.description = description;
 	}
 
-	public Integer getQuestCount() {
-		return questCount;
+	public Integer getQuestionCount() {
+		return questionCount;
 	}
 
-	public void setQuestCount(Integer questCount) {
-		this.questCount = questCount;
+	public void setQuestCount(Integer questionCount) {
+		this.questionCount = questionCount;
 	}
 
 	public Integer getApprovalCount() {
