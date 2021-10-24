@@ -95,6 +95,10 @@ public abstract class Lesson implements Serializable {
 	public void setSection(Section section) {
 		this.section = section;
 	}
+	
+	public List<Deliver> getDeliveries() {
+		return deliveries;
+	}
 
 	@Override
 	public int hashCode() {
