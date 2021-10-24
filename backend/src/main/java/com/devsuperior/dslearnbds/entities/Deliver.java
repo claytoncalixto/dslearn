@@ -33,15 +33,15 @@ public class Deliver implements Serializable {
 	private Integer correctCount;
 	
 	@ManyToOne
-	@JoinColumn(name = "lesson_id")
-	private Lesson lesson;
-	
-	@ManyToOne
 	@JoinColumns({
 		@JoinColumn(name = "offer_id"),
 		@JoinColumn(name = "user_id")
 	})
 	private Enrollment enrollment;
+	
+	@ManyToOne
+	@JoinColumn(name = "lesson_id")
+	private Lesson lesson;
 	
 	public Deliver () {
 	}
