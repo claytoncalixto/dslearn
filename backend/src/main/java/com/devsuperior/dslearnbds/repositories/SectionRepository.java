@@ -4,6 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.devsuperior.dslearnbds.entities.Section;
 
-public interface SectionRespositiry extends JpaRepository<Section, Long> {
+public interface SectionRepository extends JpaRepository<Section, Long> {
 
 }
