@@ -151,4 +151,13 @@ public class User implements UserDetails, Serializable {
 	public boolean isEnabled() {
 		return true;
 	}
+	
+	public boolean hasHole(String rolename) {
+		for(Role role: roles) {
+			if(role.getAuthority().equals(rolename)) {
+				return true;
+			}
+		}
+		return false;
+	}
 }
